@@ -8,6 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     background: antiquewhite;
+    text-align: center;
 }
 
 h1 {
@@ -22,6 +23,7 @@ p {
 }
 
 button {
+    display: block;
     background-color: -internal-light-dark(white, black);
     padding: 1rem 10rem;
     border-radius: 3rem;
@@ -29,11 +31,24 @@ button {
     cursor: pointer;
 }
 
-.conn-btn, .msg-btn {
+.file-input-label {
+    display: inline-block;
+    padding: 1rem 10rem;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.conn-btn, .msg-btn, .file-btn, .file-input-label {
     background-color: darkslategrey;
     color: antiquewhite;
     font-size: 3rem;
-    margin-left: 7rem;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#file {
+    display: none;
 }
 
 .hangup-btn {
