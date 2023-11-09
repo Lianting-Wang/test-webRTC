@@ -143,15 +143,18 @@ const connProcesser = (name) => (conn) => {
   conn.on('close', () => {
     console.log('Connection closed');
   });
-  conn.on('data', receivedData(name));
-  msgBtn.addEventListener("click", () => {
-    const word = window.prompt("Please enter the word");
-    conn.send(word);
-  });
-  fileBtn.addEventListener("click", () => {
-    const file =files.files[0];
-    console.log(file);
-    sendFile(conn, file);
+  conn.on('open', function() {
+    console.log('Connection opened');
+    conn.on('data', receivedData(name));
+    msgBtn.addEventListener("click", () => {
+      const word = window.prompt("Please enter the word");
+      conn.send(word);
+    });
+    fileBtn.addEventListener("click", () => {
+      const file =files.files[0];
+      console.log(file);
+      sendFile(conn, file);
+    });
   });
 };
 
