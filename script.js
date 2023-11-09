@@ -3,12 +3,7 @@ const chunkSize = 1024*1024;
 const peer = new Peer(
   `${Math.floor(Math.random() * 2 ** 18)
     .toString(36)
-    .padStart(4, 0)}`,
-  {
-    host: "0.peerjs.com",
-    debug: 1,
-    path: "/",
-  },
+    .padStart(4, 0)}`
 );
 
 // const peer = new Peer(
