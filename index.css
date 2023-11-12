@@ -1,91 +1,42 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-
 body {
-    color: darkslategrey;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    width: calc(100vw);
+    height: calc(95vh);
+    overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: antiquewhite;
-    text-align: center;
+    align-items: center;
+    background-color: #E4E4D0;
 }
 
 h1 {
-    font-size: 6rem;
-    letter-spacing: 0.2rem;
-    margin-bottom: auto;
+    margin: 0;
+    font-size: 90px;
+    text-align: center;
 }
 
 p {
+    font-size: 30px;
     text-align: center;
-    font-size: 2rem;
 }
 
-button {
+button, .file-input-label {
     display: block;
-    background-color: -internal-light-dark(white, black);
-    padding: 1rem 10rem;
-    border-radius: 3rem;
-    border: none;
-    cursor: pointer;
-}
-
-.file-input-label {
-    display: inline-block;
-    padding: 1rem 10rem;
-    border-radius: 3rem;
+    padding: 14px 150px;
+    border-radius: 80px;
     border: none;
     cursor: pointer;
 }
 
 .conn-btn, .msg-btn, .file-btn, .file-input-label {
-    background-color: darkslategrey;
-    color: antiquewhite;
-    font-size: 3rem;
     margin: auto;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #E4E4D0;
+    font-size: 50px;
+    background-color: #94A684;
 }
 
 #file {
     display: none;
-}
-
-.hangup-btn {
-    background-color: darkred;
-    color: white;
-    font-size: 1.5rem;
-    margin-left: 6rem;
-    margin-top: 4rem;
-}
-
-.modal {
-    padding: 5rem;
-    background-color: whitesmoke;
-    border-radius: 2rem;
-    width: 40rem;
-    height: 20rem;
-}
-
-.inner-modal {
-    text-align: center;
-}
-
-.modal label {
-    font-size: 1.5rem;
-}
-.modal input {
-    margin: 1rem 7rem 3rem;
-    display: block;
-    padding: 1rem;
-    border-radius: 3rem;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.19);
-    border: none;
-    width:50%;
-}
-
-.connect-btn {
-    background-color: #0c1d1d;
-    color: whitesmoke;
-    font-size: 1.5rem;
 }
